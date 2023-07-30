@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+/* Обнуляющие стили для ссылок */
+a:link,
+a:visited {
+  color: inherit; /* Наследование цвета текста */
+  text-decoration: none; /* Удаление подчеркивания */
+}
+textarea:focus {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+a:hover,
+a:focus,
+a:active {
+  cursor: pointer;
+  text-decoration: none; /* Подчеркивание при наведении, фокусе и активном состоянии */
+}
+/* Обнуляющие стили для списков */
+ul,
+ol {
+    list-style: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+input {
+  all: unset; /* Сбрасываем все стили инпута */
+  text-align: start;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.1;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.app {
+  width: 100%;
+   max-width: 1440px;
+
+}
+
+.home{
+  padding: 20px;
+  height: calc(100vh - 40px);
+  background-color: #FFFFFF;
+}
+
+.nav{
+  display: flex;
+  color:  #FFFFFF;
+  background-color: #333333;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.nav__link{
+  display: flex;
+  column-gap: 25px;
+}
+.timer__form{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:  0 auto;
+  row-gap: 14px;
+  width: 100%;
+}
+
+.timer__form-time{
+  display: flex;
+  column-gap: 12px;
+}
+
+
+.timer__form-input{
+  border: 1px solid #333333;
+  font-size: 14px;
+  max-width: 380px;
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.timer__form-select{
+  width: 100px;
+}
+
+.timer__form-button{
+  background: #333333;
+  border-radius: 4px;
+  max-width: 180px;
+  width: 100%;
+  font-size: 14px;
+  padding: 4px;
+  color: #FFFFFF;
+}
+
+.timer__list-item{
+  display: flex;
+  column-gap: 25px;
+  font-size: 12px;
+  margin: 15px 30px ;
+  padding: 2px;
+  border: 2px;
+  justify-content: space-between;
+  border-bottom:1px solid #333333;
+}
+
+.timer__list-item__input > input:first-child{
+  width: 40px;
+}
+
+.timer__list-item__input > input:last-child{
+  width: 80px;
+}
+
+.timer__home-buttons{
+  padding-top: 14px;
+  display: flex;
+  column-gap: 25px;
+}
+.timer__delete{
+  color:red;
+}
+
+
+.modal{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  min-height: 250px;
+  transform: translate(-50%,-50%);
+  border-radius: 4px;
+  color: #FFFFFF;
+  background: #333333;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.modal h3{
+  font-size: 35px;
+}
+
+.modal__color1{
+  color: aqua;
+}
+
+.modal__color2{
+  color: #FFFFFF;
+}
+
+.modal__button-or{
+  padding: 4px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: rgb(202, 133, 4);
+}
+
+.timer__addroutine{
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  width: 200px;
+  padding: 4px;
+}
+.timer__list-item-button{
+  display: flex;
+  column-gap: 8px;
+}
+
+
+
+
+.dark-theme > .home{
+  background-color: #1F1B24;
+}
+
+.dark-theme .timer__form-time__title{
+  color: #FFFFFF;
+}
+
+.dark-theme .timer__list-item__input{
+  color: #FFFFFF;
+}
+
+.dark-theme .timer__swap{
+  color: #FFFFFF;
+}
+
+.dark-theme  .timer__list-item{
+  border-bottom: 1px solid #FFFFFF;
+}
